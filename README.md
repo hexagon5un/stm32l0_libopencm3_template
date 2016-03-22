@@ -1,8 +1,20 @@
 # README
 
-The [libopencm3 project](http://libopencm3.org/wiki/Main_Page) is a great API for working with the STM32 family of chips.  It's very easy to get up and running with just a makefile, and at the same time it makes dreadful things like USB easy(er).  They've got a decent [collection of examples](https://github.com/libopencm3/libopencm3-examples) and very good [online API documentation](http://libopencm3.github.io/docs/latest/html/).  It's all open and in very active development.
+The [libopencm3 project](http://libopencm3.org/wiki/Main_Page) is a great API for working with the STM32 family of chips.  It's very easy to get up and running with just a makefile, and at the same time it makes dreadful things like USB easy(er).  They've got a decent [collection of examples](https://github.com/libopencm3/libopencm3-examples) and very good [online API documentation](http://libopencm3.github.io/docs/latest/html/).  It's all open and in active development.
 
 What I've done here is to take a single bit of example code (miniblink) and included the entire `libopencm3` library as a Git submodule for you to check out.  It makes a great springboard for starting up your own code.
+
+And it works across the entire STM32 family:
+
+* [STM32F0 template](https://github.com/hexagon5un/stm32f0_libopencm3_template)
+* [STM32F1 template](https://github.com/hexagon5un/stm32f1_libopencm3_template)
+* [STM32F2 template](https://github.com/hexagon5un/stm32f2_libopencm3_template)
+* [STM32F3 template](https://github.com/hexagon5un/stm32f3_libopencm3_template)
+* [STM32F4 template](https://github.com/hexagon5un/stm32f4_libopencm3_template)
+* [STM32L0 template](https://github.com/hexagon5un/stm32l0_libopencm3_template)
+* [STM32L1 template](https://github.com/hexagon5un/stm32l1_libopencm3_template)
+
+I've tested it out on F0, F1, F3, and F4 chips. Let me know if it works for you on any of the others.
 
 ## Installation Instructions
 
@@ -34,16 +46,6 @@ And that's it, really.  If you're thinking of developing ST/ARM chips with GCC, 
 This repo and a few more like it -- one for each supported ST32Fx ARM flavor -- were generated with [a hacky Python script](https://gist.github.com/hexagon5un/c88f505e53f9b8ae64ff). You can modify that to work for other examples from the library if you want, but we warned that they're not all supported on all hardware.
 
 Similarly, you could get these examples running on the NXP, TI, or Atmel ARM chips and then you'd have a cross-platform, cross-vendor starting point.  If you do that, let me (and the `libopencm3`) folks know?
-
-The whole enchilada:
-
-* [stm32f0 template](https://github.com/hexagon5un/stm32f0_libopencm3_template)
-* [stm32f1 template](https://github.com/hexagon5un/stm32f1_libopencm3_template)
-* [stm32f2 template](https://github.com/hexagon5un/stm32f2_libopencm3_template)
-* [stm32f3 template](https://github.com/hexagon5un/stm32f3_libopencm3_template)
-* [stm32f4 template](https://github.com/hexagon5un/stm32f4_libopencm3_template)
-* [stm32l0 template](https://github.com/hexagon5un/stm32l0_libopencm3_template)
-* [stm32l1 template](https://github.com/hexagon5un/stm32l1_libopencm3_template)
 
 
 ### Avoid Duplicating the Library
